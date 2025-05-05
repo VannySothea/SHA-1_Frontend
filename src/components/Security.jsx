@@ -45,7 +45,7 @@ const Security = ({ sectionRef }) => {
 				href="https://shattered.io/"
 				target="_blank"
 				rel="noopener noreferrer">
-				<i class="fa-solid fa-paperclip"></i>
+				<i className="fa-solid fa-paperclip"></i>
 				<p>SHAttered Official Site</p>
 			</a>
 
@@ -68,7 +68,7 @@ const Security = ({ sectionRef }) => {
 				href="https://sha-mbles.github.io/"
 				target="_blank"
 				rel="noopener noreferrer">
-				<i class="fa-solid fa-paperclip"></i>
+				<i className="fa-solid fa-paperclip"></i>
 				<p>SHA-1 is a Shambles (CWI + INRIA)</p>
 			</a>
 
