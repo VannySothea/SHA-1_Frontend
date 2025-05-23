@@ -23,17 +23,21 @@ const About = ({ sectionRef }) => {
 				<li>Backend Developer</li>
 			</ul>
 
-			<h3>[Team Member 2]</h3>
-			<ul>
-				<li>N/A</li>
+			<h3>Lim Hokan</h3>
+			<ul className="list-content contributions">
+				<li>Project Prototype Objectives Document</li>
+				<li>Project Prototype Description Document</li>
 			</ul>
-			<h3>[Team Member 3]</h3>
-			<ul>
-				<li>N/A</li>
+			<h3>Liza Moeun</h3>
+			<ul className="list-content contributions">
+				<li>Development Process Document</li>
+				<li>Testing & Validation Document</li>
+				<li>Implementation and Deployment Document</li>
 			</ul>
-			<h3>[Team Member 4]</h3>
-			<ul>
-				<li>N/A</li>
+			<h3>Men Sereyyuth</h3>
+			<ul className="list-content contributions">
+				<li>Project Overview Document</li>
+				<li>Project Prototype Document</li>
 			</ul>
 
 			<h2>Contributions</h2>

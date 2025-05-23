@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+html {
+  font-size: 16px;
+}
+
 :root {
-  --fs-p: 18px;
-  --fs-label: 16px;
-  --fs-links: 20px;
-  --fs-title: 26px;
-  --fs-h2: 32px;
-  --fs-h1: 38px;
-  --fs-display: 64px;
+  --fs-p: 1.125rem;
+  --fs-label: 1rem;
+  --fs-links: 1.2rem;
+  --fs-title: 1.5rem;
+  --fs-h2: 2rem;
+  --fs-h1: 2.5rem;
+  --fs-display: 4rem;
 
   --fw-1: 200;
   --fw-2: 300;
@@ -72,8 +76,8 @@ h1 {
   text-align: center;
   font-size: var(--fs-h1);
   font-weight: var(--fw-5);
-  line-height: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 3rem;
+  line-height: 1.2;
 }
 
 h2 {
@@ -101,13 +105,13 @@ h3 {
 p,
 a {
   color: var(--paragraph-color);
-  line-height: 30px;
+  line-height: 2;
   font-size: var(--fs-p);
 }
 
 a {
   text-decoration: none;
-  line-height: 30px
+  line-height: 2;
 }
 
 ul li,
@@ -172,7 +176,7 @@ aside.sidebar {
   position: fixed;
   background: var(--transparent-bg);
   overflow-y: auto;
-  width: 18%;
+  width: 300px;
   z-index: 500;
   height: 93vh;
 }
@@ -223,7 +227,7 @@ aside.sidebar ul li button i {
 article.content {
   margin: 0;
   padding: 0;
-  margin-left: 18%;
+  margin-left: 300px;
   margin-top: 4rem;
   width: 100%;
 
@@ -383,14 +387,14 @@ ol.list-content {
   margin-bottom: 1rem;
 }
 
-ul.list-content ul{
+ul.list-content ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   margin-left: 2rem;
 }
 
-ul.list-content ul{
+ul.list-content ul {
   margin-top: 1rem;
 }
 
@@ -441,12 +445,55 @@ a.link p {
   font-size: var(--fs-links);
 }
 
-span.warn{
+span.warn {
   color: var(--warning-color);
   font-size: var(--fs-links);
 }
 
-ul.contributions li{
+ul.contributions li {
   font-weight: var(--fw-4);
   color: var(--header-color);
+}
+
+@media (max-width:1200px) {
+  html {
+    font-size: 12px;
+  }
+
+  aside.sidebar {
+    width: 200px;
+  }
+
+  article.content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width:767px) {
+  html {
+    font-size: 10px;
+  }
+
+  :root {
+    --padding: 1rem 1rem 0rem 1rem;
+  }
+
+  aside.sidebar {
+    display: none;
+  }
+
+  article.content {
+    margin-left: 0;
+  }
+
+  article.content .hero-section .container article h1,
+  article.content .hero-section .container article p {
+    color: var(--header-color);
+  }
+
+  article.content .hero-section .container article {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 }
